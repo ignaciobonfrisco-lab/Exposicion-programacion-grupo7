@@ -1,0 +1,39 @@
+public class Sobrecargaconstructores {
+
+    private String nombre;
+    private int edad;
+
+    // constructor vacio
+    public Sobrecargaconstructores() {
+    }
+
+    //constructor con 1 parametro
+    public Sobrecargaconstructores (String nombre) {
+        this.nombre = nombre;
+    }
+    //constructor con 1 parametro
+    public Sobrecargaconstructores (String apellido) {
+        this.nombre = nombre;
+    }
+
+    //constructor con 2 parametros
+    public Sobrecargaconstructores (String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    //Metodo para mostrar los datos
+    public void mostrar() {
+        System.out.println("Nombre: " + nombre + " - Edad: " + edad);
+    }
+    //Main para probar el metodo
+    static void main(String[] args) {
+        Sobrecargaconstructores a = new Sobrecargaconstructores();
+        Sobrecargaconstructores b = new Sobrecargaconstructores("Ignacio");
+        Sobrecargaconstructores c = new Sobrecargaconstructores("Ignacio", 30);
+
+        a.mostrar();
+        b.mostrar();
+        c.mostrar();
+    }
+}
